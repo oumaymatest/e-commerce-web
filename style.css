@@ -160,16 +160,29 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
+thead {
+    background-color: #f5f5f5;
+}
 
 thead th {
     background-color: #f5f5f5;
     text-align: left;
     padding: 10px;
+    font-weight: bold;
 }
 
 tbody td {
     text-align: center;
     padding: 10px;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tbody td img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .titre{
     display:flex;
@@ -177,3 +190,4 @@ tbody td {
     text-align: center;
     padding: 0 0 0 30px;
 }
+
