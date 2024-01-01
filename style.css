@@ -129,6 +129,7 @@ section{
 .small-btn{
     font-weight: 400;
     padding: 4px 12px;
+    cursor: pointer;
 }
 
 
