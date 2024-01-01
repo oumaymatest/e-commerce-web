@@ -1,0 +1,37 @@
+body{
+    background-color: #e4e4e2;
+
+}
+
+section {
+    margin-top: 50px; /* Adjust the value according to your header's height */
+}
+
+
+/* product style */
+.product-detail{
+    background-color:#b7b3b3
+    ;
+    margin-top: 10px 0;
+    padding: 20px;
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-img,
+.product-properties, 
+.product-actions{
+    width: calc(33.33% - 10px);/* Adjust the width according to your layout */
+    margin-bottom: 20px;
+}
+
+.product-quantity,
+.add-to-cart{
+     width: 100%; /*occupy full width */
+}
