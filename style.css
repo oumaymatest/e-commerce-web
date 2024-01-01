@@ -123,6 +123,17 @@ section{
 .main-btn{
     vertical-align: middle;
 }
+
+/* small button style for add to cart and other buttons */
+
+.small-btn{
+    font-weight: 400;
+    padding: 4px 12px;
+}
+
+
+/* finishing the small button style */
+
 .down-arrow{
     position: absolute;
     top:85%;

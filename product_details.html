@@ -41,46 +41,47 @@
     </header>
 
     <!-- hnaya ghaykon lproduct dyalna -->
-    <section class="product-section">
-        <div class="product-container">
+    <section class="product-container">
+        <!-- left side -->
+        <div class="img-card">
+            <img src="images/img1.jpg" alt="" height="450px" id="main-img">
 
-            <!-- hnya les details du produit -->
-            <div class="product-detail">
-                <p>Unwind in our Serene Comfort Pajama Set. Made from premium cotton, this set offers breathable
-                    softness for a peaceful night's sleep. Featuring a classic shirt and relaxed-fit pants, it's your
-                    go-to for cozy lounging in style.</p>
+            <!-- dok les images sgharin li mt7t limage du produit -->
+            <div class="small-card">
+                <img src="images/pijama2.jpg" alt="smImg">
+                <img src="images/pijama5.jpg" alt="smImg">
+                <img src="images/pijama3.jpg" alt="smImg">
+                <img src="images/pijama4.jpg" alt="smImg">
             </div>
+        </div>
 
-            <!-- hnaya limage et les propriete dyal le produit -->
-            <div class="product">
-                <div class="product-img">
-                    <img src="images/img1.jpg" alt="product-image" width="200px" height="200px">
+        <!-- right side -->
+        <div class="product-info">
+            <h3>LEVI'S® WOMEN'S XL TRUCKER JACKET</h3>
+            <h5>Price: $140 <del>$170</del></h5>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae
+                corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor
+                eveniet alias eos ullam nesciunt voluptatum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae
+                corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor
+                eveniet alias eos ullam nesciunt voluptatum.</p>
+
+            <div class="size">
+                <h5>Size :</h5>
+
+                <select name="size-option" id="sizeOpt" class="sizeOpt">
+                    <option value="xxl">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Small">Small</option>
+                </select>
+
+                <div class="quantity">
+                    <input type="number" name="" id="" min="1" max="10" value="1">
+                    <button class="main-btn small-btn">Add to Cart</button>
                 </div>
 
-                <!-- Product Properties -->
-                <div class="product-properties">
-                    <ul>
-                        <li>Price : <b>250$</b></li>
-                        <li>Color : Blue</li>
-                        <li>Size : XL</li>
-                        <li>Type : Cutton</li>
-                        <li>Fabric Quality: high-quality fabric</li>
-                        <li>Design Elements: embroidered patterns, piping details.</li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <!-- ici quantite du produit et une button pour ajouter ce produit au panier -->
-
-            <div class="product-actions">
-                <div class="product-quantity">
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" name="quantity" id="quantity">
-                </div>
-                <div class="add-to-cart">
-                    <button class="main-btn">+ panier</button>
-                </div>
             </div>
         </div>
 
