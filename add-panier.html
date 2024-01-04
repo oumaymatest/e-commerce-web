@@ -37,9 +37,11 @@
         <a href="#"><i class='bx bx-cart'></i></a>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header><br>
-    <br><section class="products">
+    <br>
+    <section class="products">
         <div class="titre">
-            <h1>Panier</h1>
+            <h1>Panier</h1><br>
+            <br>
         </div>
         <table>
             <thead>
@@ -48,45 +50,79 @@
                     <th>Quantité</th>
                     <th>Prix unitaire</th>
                     <th>Photo</th>
-                    <th>Prix </th>
+                    <th>Prix total</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Produit 1</td>
-                    <td>2</td>
-                    <td>19.99 DH</td>
+                    <td> <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                        <span>0</span>
+                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                    </td>
+                    <td>300</td>
                     <td><img src="images/img1.jpg" alt="Product 1" height="30" width="30"> </td>
-                    <td>39.98 DH</td>
+                    <td class="total-price">0DH</td>
                 </tr>
                 <tr>
                     <td>Produit 2</td>
-                    <td>1</td>
+                    <td> <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                        <span>0</span>
+                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                    </td>
                     <td>29.99 DH</td>
                     <td><img src="images/img2.jpg" alt="Product 2" height="30" width="30"></td>
-                    <td>29.99 DH</td>
+                    <td class="total-price">0DH</td>
                 </tr>
                 <tr>
                     <td>Produit 3</td>
-                    <td>6</td>
+                    <td> <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                        <span>0</span>
+                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                    </td>
                     <td>50 DH</td>
                     <td><img src="images/img3.jpg" alt="Product 2" height="30" width="30"></td>
-                    <td>100 DH</td>
+                    <td class="total-price">0DH</td>
                 </tr>
                 <tr>
                     <td>Produit 4</td>
-                    <td>6</td>
+                    <td> <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                        <span>0</span>
+                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                    </td>
                     <td>40 DH</td>
                     <td><img src="images/img4.jpg" alt="Product 2" height="30" width="30"></td>
-                    <td>200DH</td>
+                    <td class="total-price">0DH</td>
                 </tr>
                 <tr>
                     <td>Produit 5</td>
-                    <td>9</td>
-                    <td>45 DH</td>
+                    <td> <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                        <span>0</span>
+                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                    </td>
+                    <td>100 DH</td>
                     <td><img src="images/img5.jpg" alt="Product 2" height="30" width="30"></td>
-                    <td>250DH</td>
+                    <td class="total-price">0DH</td>
                 </tr>
-            </body>
-            </html>
-    
+                <script>
+                    function changeQuantity(button, amount) {
+                      var row = button.parentNode.parentNode;
+                      var quantityElement = row.getElementsByTagName('span')[0];
+                      var totalElement = row.getElementsByClassName('total-price')[0];
+                      
+                      var currentQuantity = parseInt(quantityElement.innerText, 10);
+                      var newQuantity = currentQuantity + amount;
+                
+                      if (newQuantity >= 0) {
+                        quantityElement.innerText = newQuantity;
+                        
+                        var pricePerUnit = parseFloat(row.cells[2].innerText.replace('DH', ''));
+                        var newTotal = (pricePerUnit * newQuantity).toFixed(2);
+                        
+                        totalElement.innerText = 'DH' + newTotal;
+                      }
+                    }
+                  </script>
+</body>
+
+</html>
