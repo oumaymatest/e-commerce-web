@@ -288,6 +288,7 @@ header.sticky{
 
 /*style table panier*/
 /*Yassine css*/
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -321,8 +322,17 @@ tbody td img {
     justify-content: center;
     text-align: center;
     padding: 0 0 0 30px;
+    margin:20px 0px;
 }
+.titre-hover:hover{
+    color: red;
+}
+
 /*contact-section*/
+.products {
+    display: inline;
+
+}
 .contact{
     background-color:#f3f4f6;
 
