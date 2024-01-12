@@ -41,6 +41,7 @@ header {
 .nav-icon{
     display: flex;
     align-items: center;
+    
 
 }
 .nav-icon i{
@@ -277,15 +278,6 @@ header.sticky{
     margin-bottom: 2px;
 
 }
-
-
-
-
-
-
-
-
-
 /*style table panier*/
 /*Yassine css*/
 
@@ -329,10 +321,10 @@ tbody td img {
 }
 
 /*contact-section*/
-.products {
+ .products_panier {
     display: inline;
 
-}
+} 
 .contact{
     background-color:#f3f4f6;
 
@@ -341,7 +333,7 @@ tbody td img {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(160px,auto));
     gap: 3rem;
-
+    
 }
 .first-info img{
     width: 200px;
