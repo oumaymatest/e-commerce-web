@@ -41,6 +41,7 @@ header {
 .nav-icon{
     display: flex;
     align-items: center;
+    
 
 }
 .nav-icon i{
@@ -278,10 +279,7 @@ header.sticky{
 
 }
 
-
-
-
-/*style table panier*/   
+/*style table panier*/
 /*Yassine css*/
 /* 
 table {
@@ -336,15 +334,16 @@ tbody td img {
     display: inline;
 
 }   hadi hia li kany dayra lprobleme dyal l products makaybanoch m9adin  */ 
+
 .contact{
     background-color:#f3f4f6;
-
 }
+
 .contact-info{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(160px,auto));
     gap: 3rem;
-
+    
 }
 .first-info img{
     width: 200px;
