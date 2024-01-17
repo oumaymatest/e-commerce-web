@@ -281,14 +281,9 @@ header.sticky{
 
 
 
-
-
-
-
-
-/*style table panier*/
+/*style table panier*/   
 /*Yassine css*/
-
+/* 
 table {
     width: 100%;
     border-collapse: collapse;
@@ -326,13 +321,21 @@ tbody td img {
 }
 .titre-hover:hover{
     color: red;
-}
+} */
+
+
+
+
+
+/*style table panier*/
+/*Yassine css*/
+
 
 /*contact-section*/
-.products {
+/* .products {
     display: inline;
 
-}
+}   hadi hia li kany dayra lprobleme dyal l products makaybanoch m9adin  */ 
 .contact{
     background-color:#f3f4f6;
 
@@ -388,7 +391,7 @@ tbody td img {
     text-transform: capitalize;
 }
 
-/*hada dyal quntite*/
+/* hada dyal quntite
 .quantity-btn {
     cursor: pointer;
     background-color:#c3f7cf;
@@ -401,4 +404,4 @@ tbody td img {
     font-size: 12px;
     margin: 2px; 
     border-radius: 5px;
-  }
+  } */
