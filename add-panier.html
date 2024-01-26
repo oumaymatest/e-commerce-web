@@ -8,6 +8,7 @@
     <title>E-commerce web</title>
     <!--css link-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="add-product.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,96 +106,96 @@
                 </tr>
                 <script>
                     function changeQuantity(button, amount) {
-                      var row = button.parentNode.parentNode;
-                      var quantityElement = row.getElementsByTagName('span')[0];
-                      var totalElement = row.getElementsByClassName('total-price')[0];
-                      
-                      var currentQuantity = parseInt(quantityElement.innerText, 10);
-                      var newQuantity = currentQuantity + amount;
-                
-                      if (newQuantity >= 0) {
-                        quantityElement.innerText = newQuantity;
-                        
-                        var pricePerUnit = parseFloat(row.cells[2].innerText.replace('DH', ''));
-                        var newTotal = (pricePerUnit * newQuantity).toFixed(2);
-                        
-                        totalElement.innerText = 'DH' + newTotal;
-                      }
+                        var row = button.parentNode.parentNode;
+                        var quantityElement = row.getElementsByTagName('span')[0];
+                        var totalElement = row.getElementsByClassName('total-price')[0];
+
+                        var currentQuantity = parseInt(quantityElement.innerText, 10);
+                        var newQuantity = currentQuantity + amount;
+
+                        if (newQuantity >= 0) {
+                            quantityElement.innerText = newQuantity;
+
+                            var pricePerUnit = parseFloat(row.cells[2].innerText.replace('DH', ''));
+                            var newTotal = (pricePerUnit * newQuantity).toFixed(2);
+
+                            totalElement.innerText = 'DH' + newTotal;
+                        }
                     }
-                  </script>
-         </tbody>         
+                </script>
+            </tbody>
         </table>
     </section>
-      
-        <!--Contact section kanft7o section okhra  -->
-        <section class="Contact">
-            <div class="contact-info">
-                <div class="first-info">
-                    <h3>Brandscop</h3>
+
+    <!--Contact section kanft7o section okhra  -->
+    <section class="Contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <h3>Brandscop</h3>
+                <br>
+                <p> 3245 FES,Maroc </p>
+                <br>
+                <p>+212779-452787</p>
+                <br>
+                <p>brandscoop18@gmail.com</p>
+
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
                     <br>
-                    <p> 3245 FES,Maroc </p>
-                    <br>
-                    <p>+212779-452787</p>
-                    <br>
-                    <p>brandscoop18@gmail.com</p>
-    
-                    <div class="social-icon">
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-twitter' ></i></a>
-                        <a href="#"><i class='bx bxl-instagram' ></i></a>
-                        <br>
-                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    </div>
-                    
-                    </div>
-    
-                    <div class="second-info">
-                        <h4>Support</h4>
-                        <p>Contact us</p>
-                        <p>About page</p>
-                        <p>Size Guide</p>
-                        <p>Shopping & Resturns</p>
-                        <p>Privacy</p>
-                    </div>
-    
-                    <div class="third-info">
-                        <h4>Shop</h4>
-                        <p>Men's Shopping</p>
-                        <p>Women's Shopping</p>
-                        <p>Kids's Shopping</p>
-                        <p>Furniture</p>
-                        <p>Discount</p>
-    
-                    </div>
-                    <div class="fourth-info">
-                        <h4>Company</h4>
-                        <p>About</p>
-                        <p>Blog</p>
-                        <p>Affiliate</p>
-                        <p>Login</p>
-    
-                    </div>
-    
-                    <div class="five">
-                        <h4>Subscirbe</h4>
-                        <p>Receive Updates, Hot Deals,Discounts sent Straight In Your Inbox Daily</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <p>Receive Updates, Hot Deals,Discounts sent Straight In Your Inbox Daily</p>
-    
-                    </div>
-    
-    
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
                 </div>
-    
+
             </div>
-    
-        </section>
-        <div class="end-text">
-            <p>Copright © @2024. All Rights.Designed By Oumayma Lamnii,Yassine Ou-cherrou,Asmae Hanin.</p>
+
+            <div class="second-info">
+                <h4>Support</h4>
+                <p>Contact us</p>
+                <p>About page</p>
+                <p>Size Guide</p>
+                <p>Shopping & Resturns</p>
+                <p>Privacy</p>
+            </div>
+
+            <div class="third-info">
+                <h4>Shop</h4>
+                <p>Men's Shopping</p>
+                <p>Women's Shopping</p>
+                <p>Kids's Shopping</p>
+                <p>Furniture</p>
+                <p>Discount</p>
+
+            </div>
+            <div class="fourth-info">
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Affiliate</p>
+                <p>Login</p>
+
+            </div>
+
+            <div class="five">
+                <h4>Subscirbe</h4>
+                <p>Receive Updates, Hot Deals,Discounts sent Straight In Your Inbox Daily</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>Receive Updates, Hot Deals,Discounts sent Straight In Your Inbox Daily</p>
+
+            </div>
+
+
         </div>
-                  
-                  
+
+        </div>
+
+    </section>
+    <div class="end-text">
+        <p>Copright © @2024. All Rights.Designed By Oumayma Lamnii,Yassine Ou-cherrou,Asmae Hanin.</p>
+    </div>
+
+
 </body>
 
 </html>
