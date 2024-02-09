@@ -12,33 +12,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo"><img src="images/logo.png" alt="" width="3000" height="3000"></a>
-        <ul class="navmenu">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Shop</a></li>
-            <li> <a href="#">Product</a></li>
-            <li> <a href="#">Page</a></li>
-            <li> <a href="#">Docs</a></li>
-        </ul>
-        <div class="nav-icon"></div>
-        <a href="#"><i class='bx bx-search'></i></a>
-        <a href="#"><i class='bx bx-user'></i></a>
-        <a href="#"><i class='bx bx-cart'></i></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header><br>
-    <br>
+    <?php
+    include('imports/header.php');
+    ?>
     <section class="products_panier">
         <div class="titre">
             <h1 class="titre-hover">Panier</h1>
@@ -127,6 +110,7 @@
         </table>
     </section>
 
+
     <!--Contact section kanft7o section okhra  -->
     <section class="Contact">
         <div class="contact-info">
@@ -191,10 +175,9 @@
         </div>
 
     </section>
-    <div class="end-text">
-        <p>Copright © @2024. All Rights.Designed By Oumayma Lamnii,Yassine Ou-cherrou,Asmae Hanin.</p>
-    </div>
-
+    <?php
+    include('imports/footer.php');
+    ?>
 
 </body>
 

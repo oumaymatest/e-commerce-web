@@ -24,21 +24,9 @@
 <body>
 
     <!-- navigation -->
-    <header>
-        <a href="#" class="logo"><img src="images/logo.png" alt="" width="3000" height="3000"></a>
-        <ul class="navmenu">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Shop</a></li>
-            <li> <a href="#">Product</a></li>
-            <li> <a href="#">Page</a></li>
-            <li> <a href="#">Docs</a></li>
-        </ul>
-        <div class="nav-icon"></div>
-        <a href="#"><i class='bx bx-search'></i></a>
-        <a href="#"><i class='bx bx-user'></i></a>
-        <a href="#"><i class='bx bx-cart'></i></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
+    <?php
+    include('imports/header.php');
+    ?>
 
     <!-- hnaya ghaykon lproduct dyalna -->
     <section class="product-container">
@@ -150,11 +138,11 @@
         </div>
 
     </section>
-    <div class="end-text">
-        <p>Copright © @2024. All Rights.Designed By Oumayma Lamnii,Yassine Ou-cherrou,Asmae Hanin.</p>
-    </div>
+    <?php
+    include('imports/footer.php');
+    ?>
     <!-- script js -->
-    <script src="product.js">
+    <script src="product.js"> 
     </script>
 </body>
 
